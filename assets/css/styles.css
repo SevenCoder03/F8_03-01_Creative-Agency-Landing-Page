@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color-black: #152427;
+    --secondary-color-gray: #6a8383;
+    --text-color-white: #fff;
+    --text-color-black-gray: #575d5e;
+    --text-color-light-gray: #7d8188;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+/* Common */
+
+a {
+    text-decoration: none;
+}
+
+input,
+textarea,
+select,
+button {
+    font-family: inherit;
+}
+
+.container {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
