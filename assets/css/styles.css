@@ -4,7 +4,10 @@
 
 :root {
     --primary-color-black: #152427;
+    --primary-color-black-green: #143c3c;
+    --secondary-color-blue: #83a17d;
     --secondary-color-gray: #6a8383;
+    --secondary-color-green: #e2eddf;
     --text-color-white: #fff;
     --text-color-black-gray: #575d5e;
     --text-color-light-gray: #7d8188;
@@ -37,7 +40,228 @@ button {
 }
 
 .container {
-    width: 1170px;
+    width: 1140px;
     max-width: calc(100% - 48px);
     margin: 0 auto;
+}
+
+.btn {
+    display: inline-block;
+    min-width: 173px;
+    height: 57px;
+    padding: 0 20px;
+    border-radius: 40px;
+    border: 1.5px solid var(--primary-color-black-green);
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-align: center;
+    line-height: 57px;
+    color: #fff;
+    background-color: var(--primary-color-black-green);
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+/* Header */
+
+.header {
+    font-family: "Public Sans", sans-serif;
+    padding-top: 28px;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 13px;
+}
+
+.navbar__list {
+    display: flex;
+    margin-left: 320px;
+}
+
+.navbar__item {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.navbar__link {
+    position: relative;
+    color: var(--text-color-black-gray);
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.56;
+}
+
+.navbar--active,
+.navbar__item:hover .navbar__link {
+    color: var(--text-color-black);
+}
+
+.navbar--active::after {
+    position: absolute;
+    bottom: -32px;
+    left: 0;
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 2px;
+    background: var(--primary-color-black-green);
+}
+
+.header-line {
+    height: 1px;
+    flex-shrink: 0;
+    background: linear-gradient(
+        90deg,
+        #fff 0%,
+        #dddcdc 51.09%,
+        rgba(212, 212, 212, 0) 99.68%
+    );
+}
+
+/* Hero */
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.hero__title {
+    width: 368px;
+    height: 256px;
+}
+
+.hero__heading {
+    margin-top: 43px;
+    color: var(--primary-color-black);
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.hero__desc {
+    margin-top: 20px;
+    color: var(--text-color-black-gray);
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.56;
+}
+
+.hero__action {
+    display: flex;
+    align-items: center;
+    margin-top: 42px;
+}
+
+.hero__watch-video {
+    display: flex;
+    align-items: center;
+    margin-left: 43px;
+    cursor: pointer;
+}
+
+.hero__watch-video:hover .hero__watch-video-text {
+    color: var(--text-color-black);
+}
+
+.hero__watch-video:hover .hero__watch-video-button {
+    transform: scale(1.1);
+}
+
+.hero__watch-video-button {
+    position: relative;
+    display: flex;
+    transition: 0.25s;
+}
+
+.hero__watch-video-ellipse {
+    position: absolute;
+    top: -1px;
+}
+
+.hero__watch-video-play {
+    padding: 7px;
+}
+
+.hero__watch-video-text {
+    margin-left: 15px;
+    color: var(--text-color-black-gray);
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67;
+}
+
+.hero__media {
+    position: relative;
+    margin-right: 25px;
+    width: 646px;
+    height: 543px;
+    z-index: 0;
+}
+
+.hero__media::before {
+    content: "";
+    position: absolute;
+    top: 122px;
+    left: 156px;
+    display: inline-block;
+    width: 340px;
+    height: 340px;
+    border-radius: 340px;
+    background: #4dbb9a;
+    filter: blur(137px);
+    z-index: -1;
+}
+
+.hero__images {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero__img {
+    width: 202px;
+    height: 466px;
+    border-radius: 110px;
+    object-fit: cover;
+}
+
+.hero__img:nth-child(2) {
+    margin-top: 77px;
+}
+
+.header-extra {
+    position: relative;
+}
+
+.extra-1,
+.extra-2,
+.extra-3,
+.extra-4 {
+    position: absolute;
+}
+
+.extra-1 {
+    top: 99px;
+    left: 297px;
+}
+
+.extra-2 {
+    top: 107px;
+    left: 255px;
+}
+
+.extra-3 {
+    top: 400px;
+    left: 500px;
+}
+
+.extra-4 {
+    top: 632px;
+    left: 1025px;
 }
