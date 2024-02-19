@@ -316,7 +316,7 @@ button {
 /* Service */
 
 .service {
-    margin-top: 64px;
+    padding: 64px 0;
 }
 
 .service__row {
@@ -414,4 +414,178 @@ button {
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.72;
+}
+
+/* About */
+
+.about {
+    position: relative;
+    padding: 84px 0 79px;
+}
+
+.about__row {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 64px;
+}
+
+.about__image {
+    display: flex;
+    column-gap: 21px;
+}
+
+.about__img {
+    width: 286px;
+    height: 480px;
+    border-radius: 210px;
+    box-shadow: 0px 4px 234px 11px rgba(59, 137, 71, 0.25);
+    object-fit: cover;
+}
+
+.about__img:first-child {
+    margin-top: 90px;
+}
+
+.about__img:last-child {
+    margin-top: 13px;
+}
+
+.about__heading {
+    margin-top: 20px;
+    color: var(--primary-color-black);
+    font-size: 4.2rem;
+    font-weight: 600;
+    line-height: 1.24;
+}
+
+.about__desc {
+    margin-top: 11px;
+    color: var(--text-color-light-gray);
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.63;
+}
+
+.about__countdown {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 24px;
+    margin-top: 18px;
+    padding: 20px 0;
+    border-bottom: 1px solid #83a17d;
+}
+
+.countdown__percent {
+    color: var(--primary-color-black);
+    font-size: 4.2rem;
+    font-weight: 600;
+    line-height: 1.24;
+}
+
+.countdown__text {
+    color: var(--text-color-light-gray);
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.71;
+}
+
+.about-base {
+    position: absolute;
+    top: 502px;
+    left: 647px;
+    width: 143px;
+    height: 144px;
+    padding: 19px 17px 11px;
+    border-radius: 8px;
+    background: #ffffff;
+    box-shadow: 0px 7px 54px 0px rgba(154, 154, 154, 0.25);
+}
+
+.base__content {
+    padding: 0 5px;
+}
+
+.base__heading {
+    color: var(--primary-color-black);
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.base__title {
+    margin-top: 6px;
+    color: var(--text-color-black-gray);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.base__percent {
+    margin-top: 10px;
+    color: var(--primary-color-black);
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.base__percent-bar {
+    margin-top: 3px;
+    width: 96px;
+    height: 2px;
+    border-radius: 10px;
+    background: #eaeaea;
+}
+
+.base__percent-current {
+    width: 40px;
+    height: 2px;
+    border-radius: 10px;
+    background: #83a17d;
+}
+
+.base__loading {
+    margin-top: 3px;
+    color: var(--primary-color-black);
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.4;
+    text-align: end;
+}
+
+.base__dot {
+    margin-top: 3px;
+    width: 11px;
+    height: 11px;
+    background-color: var(--primary-color-black-green);
+    border: 3.5px solid #eaeaea;
+    border-radius: 50%;
+}
+
+.base__teams-list {
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 36px;
+}
+
+.base__teams {
+    color: var(--primary-color-black);
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.base__list {
+    display: flex;
+}
+
+.base__member {
+    width: 16px;
+    height: 16px;
+    margin-left: -6px;
+    border-radius: 16px;
+    border: 1px solid #fff;
+    object-fit: cover;
 }
