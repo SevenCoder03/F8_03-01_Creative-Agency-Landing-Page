@@ -760,6 +760,11 @@ button {
     display: flex;
     margin-top: 13px;
     column-gap: 26px;
+    cursor: pointer;
+}
+
+.feature__action:hover {
+    opacity: 0.8;
 }
 
 .feature__all {
@@ -872,4 +877,115 @@ button {
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.72;
+}
+
+/* Blog */
+
+.blog {
+    padding: 40px 0;
+    margin: 100px 0;
+}
+
+.blog__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blog__heading {
+    margin-top: 12px;
+    width: 600px;
+    height: 104px;
+    color: var(--primary-color-black);
+    font-size: 4.2rem;
+    font-weight: 600;
+    line-height: 1.24;
+}
+
+.blog__heading::after {
+    content: "";
+    position: relative;
+    top: -10px;
+    left: 0;
+    display: inline-block;
+    width: 66px;
+    height: 2px;
+    background-color: var(--primary-color-black);
+}
+
+.blog__desc {
+    width: 409px;
+    color: var(--text-color-light-gray);
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.63;
+}
+
+.blog__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    margin-top: 105px;
+}
+
+.blog-item {
+    height: 521px;
+    border-radius: 20px;
+    border: 1px solid var(--secondary-color-light-green);
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.blog-item:hover {
+    background: #fff;
+    box-shadow: -6px 9px 64px -4px rgba(118, 118, 118, 0.25);
+}
+
+.blog-item__thumb {
+    width: 370px;
+    height: 318px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.blog-item__body {
+    position: relative;
+    height: 205px;
+    padding: 26px 30px 12px;
+}
+
+.blog-item__stories {
+    width: 107px;
+    height: 26px;
+    padding: 7px 33px;
+    border-radius: 20px;
+    background: var(--secondary-color-light-green);
+    color: #000;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.blog-item__heading {
+    margin-top: 13px;
+    color: var(--primary-color-black-green);
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67;
+}
+
+.blog-item__date {
+    position: absolute;
+    bottom: 0;
+    width: 310px;
+    margin-top: 9px;
+    padding-top: 15px;
+    padding-bottom: 12px;
+    border-top: 1px solid #c4c4c4;
+    color: var(--text-color-black-gray);
+    text-align: right;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.2;
 }
